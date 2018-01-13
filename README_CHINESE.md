@@ -1,7 +1,7 @@
 # DifferRepair  [![](https://jitpack.io/v/aliletter/differrepair.svg)](https://jitpack.io/#aliletter/differrepair)
 随着项目的迭代更新，功能越来越复杂，应用包也越来越庞大。 如果用户需要更新应用程序，则用户必须下载安装包，这导致一些用户无法在没有wifi的情况下及时更新应用程序。 因此，减小安装包的大小是很有必要的。DifferRepair能够生成体积小的差异包，然后差异包和移动端的应用包生成新的应用包。
 ## 使用说明
-差异包需要在linux系统下生成。差异包生成工具中的jar文件和so文件必须放在同一目录下。点击[下载](https://github.com/aliletter/DifferRepair/blob/master/differrepair_tools.7z) tool.
+差异包需要在linux系统下生成。差异包生成工具中的jar文件和so文件必须放在同一目录下。点击[下载](https://raw.githubusercontent.com/aliletter/DifferRepair/master/differrepair_tools.7z) tool.
 ### 方法说明 
 ```Java
     /*
