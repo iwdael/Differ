@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PackageUpdata.iml" filepath="$PROJECT_DIR$/PackageUpdata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libspackageupdata/libspackageupdata.iml" filepath="$PROJECT_DIR$/libspackageupdata/libspackageupdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DifferRepair.iml" filepath="$PROJECT_DIR$/DifferRepair.iml" />
+      <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\PackageUpdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\PackageUpdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libsdifferrepair/libsdifferrepair.iml" filepath="$PROJECT_DIR$/libsdifferrepair/libsdifferrepair.iml" />
+      <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" />
+      <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\libspackageupdata\libspackageupdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\libspackageupdata\libspackageupdata.iml" />
     </modules>
   </component>
 </project>
