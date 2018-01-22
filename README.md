@@ -9,7 +9,7 @@ Difference package needs to be generated in linux system. The jar file and the s
      * newfile: akpfile which is non-exist,and will be combined by the method
      * patchfile: patchfile and oldfile are combine newfile
      */
-    PackageUpdata.bspatch(File oldfile,File newfile,File patchfile)
+    DifferRepair.repair(File oldfile,File newfile,File patchfile)
 ```
 
 ### Linux Command 
