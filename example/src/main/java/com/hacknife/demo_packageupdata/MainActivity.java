@@ -1,4 +1,4 @@
-package com.blackchopper.demo_packageupdata;
+package com.hacknife.demo_packageupdata;
 
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.util.Log;
 
 
 import com.aliletter.demo_differrepair.R;
-import com.blackchopper.differrepair.DifferRepair;
+import com.hacknife.differrepair.DifferRepair;
 
 import java.io.File;
 
