@@ -10,8 +10,8 @@
       <module fileurl="file://D:\DifferRepair\example\example.iml" filepath="D:\DifferRepair\example\example.iml" />
       <module fileurl="file://$PROJECT_DIR$/libsdifferrepair/libsdifferrepair.iml" filepath="$PROJECT_DIR$/libsdifferrepair/libsdifferrepair.iml" />
       <module fileurl="file://D:\DifferRepair\libsdifferrepair\libsdifferrepair.iml" filepath="D:\DifferRepair\libsdifferrepair\libsdifferrepair.iml" />
-      <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" />
       <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\libspackageupdata\libspackageupdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\libspackageupdata\libspackageupdata.iml" />
+      <module fileurl="file://C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" filepath="C:\Users\absurd\Desktop\DifferRepair\libsdifferrepair\libspackageupdata.iml" />
     </modules>
   </component>
 </project>
