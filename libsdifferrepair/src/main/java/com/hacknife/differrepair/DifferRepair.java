@@ -3,8 +3,8 @@ package com.hacknife.differrepair;
 import java.io.File;
 
 /**
- * Author: aliletter
- * Github: http://github.com/aliletter
+ * Author: hacknife
+ * Github: http://github.com/hacknife
  * Data: 2017/8/17.
  */
 

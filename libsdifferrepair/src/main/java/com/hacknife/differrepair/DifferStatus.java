@@ -1,8 +1,8 @@
 package com.hacknife.differrepair;
 
 /**
- * Author: mr-absurd
- * Github: http://github.com/mr-absurd
+ * Author: hacknife
+ * Github: http://github.com/hacknife
  * Data: 2017/8/18.
  */
 

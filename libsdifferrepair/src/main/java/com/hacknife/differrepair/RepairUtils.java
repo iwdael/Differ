@@ -21,6 +21,9 @@ public class RepairUtils {
     public static void install(Context context, File apkFile) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        }
         intent.setDataAndType(uriFromFile(context, apkFile), "application/vnd.android.package-archive");
         context.startActivity(intent);
     }
@@ -33,7 +36,7 @@ public class RepairUtils {
 
     public static Uri uriFromFile(Context context, File file) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return FileProvider.getUriForFile(context, context.getPackageName() + ".FileProvider", file);
+            return FileProvider.getUriForFile(context, "com.hacknife.differrepair.FileProvider", file);
         } else {
             return Uri.fromFile(file);
         }
