@@ -13,6 +13,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:26.0.0'
+    compileOnly 'com.android.support:support-v4:26.0.0'
 }
 group = 'com.github.hacknife'
