@@ -36,7 +36,8 @@ public class RepairUtils {
 
     public static Uri uriFromFile(Context context, File file) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return FileProvider.getUriForFile(context, "com.hacknife.differrepair.FileProvider", file);
+
+            return FileProvider.getUriForFile(context, context.getPackageName() + ".DifferRepairFileProvider", file);
         } else {
             return Uri.fromFile(file);
         }
