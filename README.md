@@ -1,4 +1,4 @@
-# DifferRepair [![](https://jitpack.io/v/com.hacknife/differrepair.svg)](https://jitpack.io/#com.hacknife/differrepair)
+# DifferRepair [![](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/language-java-yellow.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/Jcenter-1.1.4-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/license-apache--2.0-green.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/api-19+-green.svg)](https://github.com/hacknife)<br/><br/>
 随着项目的迭代更新，功能越来越复杂，应用包也越来越庞大。 如果用户需要更新应用程序，则用户必须下载安装包，这导致一些用户无法在没有wifi的情况下及时更新应用程序。 因此，减小安装包的大小是很有必要的。DifferRepair能够生成体积小的差异包，然后差异包和移动端的应用包生成新的应用包。[English](https://github.com/hacknife/DifferRepair/blob/master/README_ENGLISH.md)
 ## 使用说明
 差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/DifferRepair/master/differrepair_tools.7z) tool 。

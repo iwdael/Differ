@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.0'
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
@@ -16,3 +16,12 @@ dependencies {
     compileOnly 'com.android.support:support-v4:26.0.0'
 }
 group = 'com.github.hacknife'
+
+publish{
+    userOrg = 'hacknife'
+    groupId = 'com.hacknife'
+    artifactId = 'differrepair'
+    publishVersion = '1.1.4'
+    desc = ''
+    website = 'https://github.com/hacknife/DifferRepair'
+}
