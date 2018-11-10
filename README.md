@@ -17,26 +17,15 @@
 	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
 ```
 ## 如何配置
-将本仓库引入你的项目:
-### Step 1. 添加JitPack仓库到Build文件
-合并以下代码到项目根目录下的build.gradle文件的repositories尾。[点击查看详情](https://github.com/hacknife/CarouselBanner/blob/master/root_build.gradle.png)
-```Java
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-```
-### Step 2. 添加依赖   
+### Step 1. 添加依赖   
 合并以下代码到需要使用的application Module的dependencies尾。[点击查看详情](https://github.com/hacknife/CarouselBanner/blob/master/application_build.gradle.png)
 ```Java
 	dependencies {
                 ...
-	        compile 'com.github.hacknife:differrepair:v1.0.3'
+	        compile 'com.hacknife:differrepair:1.1.4'
 	}
 ```
-### Step 3. 设置JniLibs目录
+### Step 2. 设置JniLibs目录
 合并以下代码到你的application module的build.gradle。[点击查看详情](https://github.com/hacknife/gifengine/blob/master/jnilibs.png)
 ```Java
 android {
@@ -49,13 +38,13 @@ android {
 }
 
 ```
-### Step 4. 添加权限
+### Step 3. 添加权限
 合并以下代码到应用的AndroidManifest.xml的manifest标签中。[点击查看详情](https://github.com/hacknife/OnHttp/blob/master/androimanifest.png)
 ```Java
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
-### Step 5. 复制动态库文件
+### Step 4. 复制动态库文件
 点击[这里](https://raw.githubusercontent.com/hacknife/DifferRepair/master/libs.7z) ,解压并复制文件到libs目录。[点击查看详情](https://github.com/hacknife/gifengine/blob/master/libs.png)
 <br><br><br>
 ## 感谢浏览
