@@ -4,7 +4,7 @@
 ## 使用说明
 差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/DifferRepair/master/differrepair_tools.7z) tool 。
 ### 方法说明
-安装应用
+##### 安装应用
 ```
         if (RepairUtils.haveUnknownAppInstallPermission(this)) {//检测高版本是否有安装未知应用权限
             RepairUtils.openUnknownAppInstallPermission(this);//打开安装未知应用的权限
@@ -12,7 +12,7 @@
             RepairUtils.install(this, apkFile);//安装应用
         }
 ```
-根据本地安装的应用(旧应用)和新应用的补丁包生成新应用
+##### 根据本地安装的应用(旧应用)和新应用的补丁包生成新应用
 ```
     /*
      * oldfile: 本地安装的应用(旧应用) 常规操作：ApplicationInfo.sourceDir
@@ -21,24 +21,23 @@
      */
     DifferRepair.repair(File oldfile,File newfile,File patchfile)
 ```
-
-### 生成补丁包
+##### 生成补丁包
 需要在linux环境下，执行如下命令，生成补丁包。
 ```
 	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
 ```
 ## 如何配置
 ### Step 1. 添加依赖   
-合并以下代码到需要使用的application Module的dependencies尾。
-```Java
+合并以下代码到需要使用的module的dependencies尾。
+```
 	dependencies {
                 ...
 	        compile 'com.hacknife:differrepair:1.1.4'
 	}
 ```
-### Step 2. 设置JniLibs目录
+### Step 2. 设置JniLibs目录(如果需要通过补丁包生成新应用)
 合并以下代码到你的application module的build.gradle。
-```Java
+```
 android {
     ...
     sourceSets {
@@ -51,12 +50,12 @@ android {
 ```
 ### Step 3. 添加权限
 合并以下代码到应用的AndroidManifest.xml的manifest标签中。
-```Java
+```
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 ```
-### Step 4. 复制动态库文件
+### Step 4. 复制动态库文件(如果需要通过补丁包生成新应用)
 点击[这里](https://raw.githubusercontent.com/hacknife/DifferRepair/master/libs.7z) ,解压并复制文件到libs目录。
 <br><br><br>
 ## 感谢浏览
