@@ -15,4 +15,11 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.0'
     implementation project(':differ-java')
+    implementation project(':differ-arm64')
+    implementation project(':differ-armv7a')
+    implementation project(':differ-armv5')
+    implementation project(':differ-mips')
+    implementation project(':differ-mips64')
+    implementation project(':differ-x86')
+    implementation project(':differ-x86_64')
 }
