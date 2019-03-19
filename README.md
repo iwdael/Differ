@@ -17,7 +17,7 @@
 需要在linux环境下，执行如下命令，生成补丁包。
 差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/Differ/master/PatchTool.zip) tool 。
 ```
-	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
+	java -jar differ.jar ./old.apk ./new.apk ./apk.patch
 ```
 
 ##### 根据本地安装的应用(旧应用)和新应用的补丁包生成新应用
