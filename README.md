@@ -15,7 +15,7 @@
 根据旧版本应用与新版本应用生成差分补丁包，差分补丁包可与旧版本应用生成新版本应用。用户通过下载的差分补丁包(比完成的应用小很多)与旧版本应用(手机中系统会自动备份Apk)生成新版本应用，安装生成的应用达到升级的效果。
 ##### 生成补丁包
 需要在linux环境下，执行如下命令，生成补丁包。
-差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/Differ/master/differrepair_tools.7z) tool 。
+差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/Differ/master/PatchTool.zip) tool 。
 ```
 	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
 ```
