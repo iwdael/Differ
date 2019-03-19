@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+publish {
+    userOrg = bintray.userOrg
+    groupId = bintray.groupId
+    artifactId = 'differ-armv7a'
+    publishVersion = bintray.publishVersion
+    desc = bintray.desc
+    website = bintray.website
+}

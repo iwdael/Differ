@@ -9,16 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
-    sourceSets {
-        main() {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.0'
-    implementation project(':libsdifferrepair')
+    implementation project(':differ-java')
 }

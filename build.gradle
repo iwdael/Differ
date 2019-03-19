@@ -8,16 +8,22 @@ buildscript {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         classpath 'com.novoda:bintray-release:0.7.0'
     }
+    ext.bintray = [
+            'userOrg'       : 'hacknife',
+            'groupId'       : 'com.hacknife.differ',
+            'publishVersion': '1.1.4',
+            'desc'          : '',
+            'website'       : 'https://github.com/hacknife/differ',
+    ]
 }
-
 allprojects {
     repositories {
         google()
         jcenter()
     }
-    tasks.withType(Javadoc){
-        options.addStringOption('Xdoclint:none','-quiet')
-        options.addStringOption('encoding','UTF-8')
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
     }
 }
 

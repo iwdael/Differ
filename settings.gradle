@@ -1,1 +1,1 @@
-include ':example', ':libsdifferrepair'
+include ':example', ':differ-java', ':differ-arm64', ':differ-armv5', ':differ-armv7a', ':differ-x86', ':differ-x86_64', ':differ-mips', ':differ-mips64'

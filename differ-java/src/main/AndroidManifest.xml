@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.hacknife.differ">
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <application >
+        <provider
+            android:name="com.hacknife.differ.FileProvider"
+            android:authorities="${applicationId}.DifferFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/differrepair_paths" />
+        </provider>
+    </application>
+
+</manifest>

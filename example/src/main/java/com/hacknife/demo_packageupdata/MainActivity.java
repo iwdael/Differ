@@ -7,7 +7,7 @@ import android.util.Log;
 
 
 import com.aliletter.demo_differrepair.R;
-import com.hacknife.differrepair.DifferRepair;
+import com.hacknife.differ.Differ;
 
 import java.io.File;
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         new AsynUpdataTask().execute();
         File newfile = new File("/sdcard/Music/new.apk");
-        //    RepairUtils.install(getApplicationContext(),newfile);
+        //    DifferUtils.install(getApplicationContext(),newfile);
     }
 
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             File patchfile = new File("/sdcard/Music/apk.patch");
             if (oldfile.exists() && patchfile.exists()) {
                 Log.v("TAG", "Combine Start!");
-                DifferRepair.repair(oldfile, newfile, patchfile);
+                Differ.repair(oldfile, newfile, patchfile);
                 Log.v("TAG", "Combine End!");
             } else {
                 Log.v("TAG", "File not exists! ");

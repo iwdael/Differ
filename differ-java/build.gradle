@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+}
+
+dependencies {
+    compileOnly 'com.android.support:support-v4:26.0.0'
+}
+
+publish {
+    userOrg = bintray.userOrg
+    groupId = bintray.groupId
+    artifactId = 'differ-java'
+    publishVersion = bintray.publishVersion
+    desc = bintray.desc
+    website = bintray.website
+}
