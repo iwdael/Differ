@@ -30,22 +30,19 @@
     Differ.repair(File oldfile,File newfile,File patchfile)
 ```
 
-## 如何配置
-### Step 1. 添加依赖   
-合并以下代码到需要使用的module的dependencies尾。
+## 快速引入项目
 ```
-	dependencies {
-                ...
-	        implementation 'com.hacknife.differ:differ-java:1.1.4'
-	        //optional abi
-	        implementation 'com.hacknife.differ:differ-arm64:1.1.4'
-	        implementation 'com.hacknife.differ:differ-armv7a:1.1.4'
-	        implementation 'com.hacknife.differ:differ-armv5:1.1.4'
-	        implementation 'com.hacknife.differ:differ-mips:1.1.4'
-	        implementation 'com.hacknife.differ:differ-mips64:1.1.4'
-	        implementation 'com.hacknife.differ:differ-x86:1.1.4'
-	        implementation 'com.hacknife.differ:differ-x86_64:1.1.4'
-	}
+dependencies {
+	  implementation 'com.hacknife.differ:differ-java:1.1.4'
+	  //optional abi
+	  implementation 'com.hacknife.differ:differ-arm64:1.1.4'
+	  implementation 'com.hacknife.differ:differ-armv7a:1.1.4'
+	  implementation 'com.hacknife.differ:differ-armv5:1.1.4'
+	  implementation 'com.hacknife.differ:differ-mips:1.1.4'
+	  implementation 'com.hacknife.differ:differ-mips64:1.1.4'
+	  implementation 'com.hacknife.differ:differ-x86:1.1.4'
+	  implementation 'com.hacknife.differ:differ-x86_64:1.1.4'
+}
 ```
 
 <br><br><br>
