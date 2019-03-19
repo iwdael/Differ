@@ -2,9 +2,8 @@
 [![](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/language-java-yellow.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/Jcenter-1.1.4-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/license-apache--2.0-green.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/api-19+-green.svg)](https://github.com/hacknife)<br/><br/>
 随着项目的迭代更新，功能越来越复杂，应用包也越来越庞大。 如果用户需要更新应用程序，则用户必须下载安装包，这导致一些用户无法在没有wifi的情况下及时更新应用程序。 因此，减小安装包的大小是很有必要的。DifferRepair能够生成体积小的差异包，然后差异包和移动端的应用包生成新的应用包。
 ## 使用说明
-差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/Differ/master/differrepair_tools.7z) tool 。
-### 方法说明
-##### 安装应用
+
+### 安装应用
 ```
         if (DifferUtils.haveUnknownAppInstallPermission(this)) {//检测高版本是否有安装未知应用权限
             DifferUtils.openUnknownAppInstallPermission(this);//打开安装未知应用的权限
@@ -12,6 +11,15 @@
             DifferUtils.install(this, apkFile);//安装应用
         }
 ```
+### 补丁
+根据旧版本应用与新版本应用生成差分补丁包，差分补丁包可与旧版本应用生成新版本应用。用户通过下载的差分补丁包(比完成的应用小很多)与旧版本应用(手机中系统会自动备份Apk)生成新版本应用，安装生成的应用达到升级的效果。
+##### 生成补丁包
+需要在linux环境下，执行如下命令，生成补丁包。
+差异包需要在linux系统下生成，差异包生成工具中的jar文件和so文件必须放在同一目录下，点击[下载](https://raw.githubusercontent.com/hacknife/Differ/master/differrepair_tools.7z) tool 。
+```
+	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
+```
+
 ##### 根据本地安装的应用(旧应用)和新应用的补丁包生成新应用
 ```
     /*
@@ -21,11 +29,7 @@
      */
     Differ.repair(File oldfile,File newfile,File patchfile)
 ```
-##### 生成补丁包
-需要在linux环境下，执行如下命令，生成补丁包。
-```
-	java -jar differrepair.jar ./old.apk ./new.apk ./apk.patch
-```
+
 ## 如何配置
 ### Step 1. 添加依赖   
 合并以下代码到需要使用的module的dependencies尾。
